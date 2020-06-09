@@ -126,7 +126,7 @@ a:hover {
     position: fixed;
     background: #e7524c;
     width: 100vw;
-    height: 100vh;
+    height: 100vw;
     transform: scale(0);
     transition: all 1s ease-in-out;
     border-radius: 50%;
@@ -134,5 +134,4 @@ a:hover {
 }
 .pre-ripple.loaded {
     transform: scale(1.5);
-    opacity: 0;
 }
