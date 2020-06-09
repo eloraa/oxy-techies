@@ -127,11 +127,11 @@ a:hover {
     background: #e7524c;
     width: 100vw;
     height: 100vw;
-    transform: scale(0);
+    transform: scale(0) translateY(calc(300vw + 5vh));
     transition: all 1s ease-in-out;
     border-radius: 50%;
     z-index: 223;
 }
 .pre-ripple.loaded {
-    transform: scale(1.5);
+    transform: scale(4.5);
 }
