@@ -1,0 +1,31 @@
+@media (max-width: 768px) {
+	.work-process .layout-row > div:nth-child(even) span::after {
+		display: none;
+	}
+	.work-process .layout-row > div span::after {
+		width: 235%;
+	}
+	.clients .entry-box img {
+    	max-width: 200px;
+	}
+	.events .entry-box {
+    	width: 100%;
+	}
+}
+@media (max-width: 1024px) and (min-width: 768px) {
+	.work-process .layout-row > div:nth-child(3) span::after {
+		display: none;
+	}
+}
+@media (min-width: 768px) {
+	.contact-form p {
+		width: 50%;
+		float: left;
+	}
+	.contact-form p:nth-child(3) {
+		padding-right: 35px;
+	}
+	.contact-form p:nth-child(5) {
+		width: 100%;
+	}
+}

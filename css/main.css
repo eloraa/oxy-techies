@@ -1,0 +1,138 @@
+/* --------------------------------------------
+    
+    main.css : main style file
+    Project : My Portfolio
+    Author : Neon 
+    
+   -------------------------------------------- */
+
+
+html {
+    font-size: 100%;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #605561;
+    -webkit-text-size-adjust: none;
+    background: #fff;
+    margin: 0;
+}
+
+a {
+    color: #111;
+    text-decoration: none;
+    outline: none;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+a:hover {
+    color: #1851f1;
+}
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+.preloader {
+    user-select: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #111;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    place-content: center;
+    font-family: 'Jost*';
+    text-transform: uppercase;
+    transition: all 1s ease-in-out;
+    z-index: 222;
+}
+.loader-bg {
+    position: absolute;
+    font-size: 40vw;
+    font-weight: 900;
+    color: #222;
+    z-index: -1;
+}
+.loader-circle {
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    width: 5vw;
+    height: 5vw;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    border-top: 1px solid #555;
+    animation: 1s infinite linear rotate;
+}
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.loader-text {
+    padding: 0 2px 4px 2px;
+    line-height: 1;
+    overflow: hidden;
+    position: relative;
+    font-size: calc(18px + 1.5vw);
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+.loader-text::after,
+.loader-text::before {
+    content: '';
+    position: absolute;
+    height: 1.1px;
+    bottom: 0;
+    left: 0;
+}
+.loader-text::before {
+    background: #fff;
+    width: 100%;
+}
+.loader-text::after {
+    background: #111;
+    width: 100%;
+    animation: 2.5s infinite linear loading;
+}
+@keyframes loading {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Preloader Ripple Out */
+.pre-ripple {
+    position: fixed;
+    background: #e7524c;
+    width: 100vw;
+    height: 100vh;
+    transform: scale(0);
+    transition: all 1s ease-in-out;
+    border-radius: 50%;
+    z-index: 223;
+}
+.pre-ripple.loaded {
+    transform: scale(1.5);
+    opacity: 0;
+}
